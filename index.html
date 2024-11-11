@@ -4,7 +4,8 @@
     <head>
         <title>Quiz para programadores.</title>
         <meta name="description" content="Um quiz interativo para testar seus conhecimentos.">
-    </head>
+        <link rel="stylesheet" href="style.css">
+      </head>
     <body>
         <header>
             <h1>Quiz interativo para programadores.</h1>
@@ -75,7 +76,7 @@
             </section>
             <!--Pergunta 6: upload de arquivo-->
             <section>
-                <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTM</h2>
+                <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
                 <form>
                     <input type="file" id="p6" name="pergunta6">
                 </form>
@@ -99,7 +100,10 @@
                 <figure>
                 <img src="./imagens/download.png" alt="Logotipo de uma linguagem de programação."><br><figcaption>Figura 1: Logotipo de uma linguagem de programção.</figcaption>
                 </figure>
-                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta..."> 
+                <form>
+                <input type="text" id="p8" name="pergunta8"
+                placeholder="Digite sua resposta">
+                </form>
             </section>
             <!--Tabela de pontuação.-->
             <section>
@@ -162,17 +166,19 @@
                         <legend>Informações de contato</legend>
                     <label for="nome">Nome Completo:</label>
                     <br>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome"
+                    placeholder="Digite seu Nome Completo"></textarea>
                     <br>
                     <br>
                     <label for="email">Email:</label>
                     <br>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email"
+                    placeholder="Digite seu Email"></textarea>
                     <br>
                     <br>
                     <label for="comentarios">Comentários:</label>
                     <br>
-                    <textarea id="comentarios" name="comentários" rows="4" cols="25" placeholder="Digite seu comentario aqui"></textarea>
+                    <textarea id="comentarios" name="comentários" rows="4" cols="25" placeholder="Digite seu comentario"></textarea>
                     <br>
                     <button onclick="alert('FEEDBACK ENVIADO COM SUCESSO!')"">Envie o feedback</button>
                 </fieldset>
@@ -180,8 +186,8 @@
             </section>
         </main>
         <footer>
-            <p>&copy; Quiz de programadores. Todos os direitos reservados.</p>
-            <p>Para conhecer mais sobre mim <a href="Sobremim.html" target="_blank">clique aqui.</a></p>
+            <p class="paragrafo-footer">&copy; Quiz de programadores. Todos os direitos reservados.</p>
+            <p class="paragrafo-footer">Para conhecer mais sobre mim <a href="Sobremim.html" target="_blank">clique aqui.</a></p>
         </footer>
     </body>
 </html>
